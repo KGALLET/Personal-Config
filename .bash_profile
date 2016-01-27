@@ -13,6 +13,7 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Setting PATH for Python 3.5
 export PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 
+# Adding branch when a folder is on git 
 function parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
@@ -37,4 +38,4 @@ fi
 
 # My aliases
 alias ll='ls -all'
-alias cdcd='cd .. && cd ..'
+alias cdcd='cd .. && cd ..	'
