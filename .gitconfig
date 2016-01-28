@@ -1,0 +1,50 @@
+[user]
+	name = NVKFTW
+	email = kevingallet@gmail.com
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+
+[push]
+	default = simple
+
+[core]
+	editor = vi
+
+[color]
+    ui = auto
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = blue bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = cyan
+
+[alias]
+    st = status
+    c = commit -m
+    amend = commit --amend
+    br = branch
+    ch = checkout
+    df = diff
+    dc = diff --cached
+    pl = pull 
+    pu = push -u origin master
+    a = add
+[https]
+	proxy = https://cache-etu.univ-lille1.fr:3128
+[http]
+	proxy = http://cache-etu.univ-lille1.fr:3128
