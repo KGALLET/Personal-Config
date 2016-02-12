@@ -45,6 +45,14 @@
     pu = push -u origin master
     a = add
 [https]
+[http]
+[https]
+[http]
+[https]
+[http]
+[https]
+[http]
+[https]
 	proxy = https://cache-etu.univ-lille1.fr:3128
 [http]
 	proxy = http://cache-etu.univ-lille1.fr:3128

@@ -1,3 +1,7 @@
+# Tips to add a script from the Applications folder to allow execution in bash
+# Example with Atom :
+# ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
+
 # Cleaning PATH
 export PATH=""
 
@@ -12,6 +16,12 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 # Setting PATH for Python 3.5
 export PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+
+# Setting PATH for maven 3.3.9
+export PATH="/usr/local/bin/maven/bin:${PATH}"
+
+# Setting JAVA_HOME at /usr/libexec/java_home
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Adding branch when a folder is on git 
 function parse_git_branch() {
@@ -39,3 +49,4 @@ fi
 # My aliases
 alias ll='ls -all'
 alias cdcd='cd .. && cd ..	'
+alias l='ls'
