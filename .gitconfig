@@ -45,3 +45,5 @@
     pu = push -u origin master
     a = add
 
+[credential]
+	helper = osxkeychain
