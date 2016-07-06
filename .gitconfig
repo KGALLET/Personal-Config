@@ -1,5 +1,5 @@
 [user]
-	name = NVKFTW
+	name = KevinGallet
 	email = kevingallet@gmail.com
 
 [filter "lfs"]
@@ -11,7 +11,7 @@
 	default = simple
 
 [core]
-	editor = vi
+	editor = nano
 
 [color]
     ui = auto
@@ -44,15 +44,4 @@
     pl = pull 
     pu = push -u origin master
     a = add
-[https]
-[http]
-[https]
-[http]
-[https]
-[http]
-[https]
-[http]
-[https]
-	proxy = https://cache-etu.univ-lille1.fr:3128
-[http]
-	proxy = http://cache-etu.univ-lille1.fr:3128
+

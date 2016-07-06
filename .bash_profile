@@ -23,6 +23,22 @@ export PATH="/usr/local/bin/maven/bin:${PATH}"
 # Setting JAVA_HOME at /usr/libexec/java_home
 export JAVA_HOME=$(/usr/libexec/java_home)
 
+# Setinng PATH for node_modules LAC
+export PATH="~/Documents/Stage/CreationCulturelle/lacnative/node_modules:$PATH"
+
+# Setting PATH for Python 3.5
+export PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+
+# Setting PATH for android sdk & ndk
+export PATH="~/android-sdk-macosx/platform-tools/:~/android-sdk-macosx/tools/:$PATH"
+export ANDROID_NDK="~/android-ndk-r10e/"
+
+# Setting node_modules to PATH
+export PATH="~/Documents/Stage/CreationCulturelle/lacnative/node_modules/:$PATH"
+
+[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+export ANDROID_HOME="$HOME/android-sdk-macosx/"
+
 # Adding branch when a folder is on git 
 function parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -49,4 +65,6 @@ fi
 # My aliases
 alias ll='ls -all'
 alias cdcd='cd .. && cd ..	'
-alias l='ls'
+alias lac='cd ~/Documents/Stage/CreationCulturelle/lacnative/'
+alias runa='react-native run-android'
+alias runi='react-native run-ios'
