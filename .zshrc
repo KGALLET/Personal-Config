@@ -80,7 +80,7 @@ export PATH="~/Documents/Stage/CreationCulturelle/lacnative/node_modules/:$PATH"
 source $ZSH/oh-my-zsh.sh
 
 # Owner
-export USER_NAME="YOUR NAME"
+export USER_NAME="Kévin Gallet"
 eval "$(rbenv init -)"
 
 # FileSearch
