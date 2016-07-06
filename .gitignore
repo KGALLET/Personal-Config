@@ -197,7 +197,7 @@
 .wireshark-etc/
 .wireshark/
 .zcompdump
-".zcompdump*
+.zcompdump*
 .zsh-update
 .zsh_history
 Applications/
