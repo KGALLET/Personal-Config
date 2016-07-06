@@ -197,8 +197,7 @@
 .wireshark-etc/
 .wireshark/
 .zcompdump
-".zcompdump-MacBook Air de K\303\251vin-5.0.8"
-".zcompdump-MacBook Air de K\303\251vin-5.2"
+".zcompdump*
 .zsh-update
 .zsh_history
 Applications/
