@@ -27,7 +27,7 @@ ZSH_THEME="zeta"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -49,7 +49,7 @@ ZSH_THEME="zeta"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man colorize brew osx zsh-syntax-highlighting)
+plugins=(git colored-man colorize brew npm nyan osx zsh-syntax-highlighting)
 
 # User configuration
 
