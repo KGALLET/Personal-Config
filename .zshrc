@@ -27,7 +27,7 @@ ZSH_THEME="zeta"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -64,14 +64,16 @@ export PATH="$HOME/Documents/L3:$PATH"
 # Setting PATH For MacPorts Installer
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Setinng PATH for node_modules LAC
-export PATH="~/Documents/Stage/CreationCulturelle/lacnative/node_modules:$PATH"
+export PATH="$HOME/Documents/Stage/CreationCulturelle/lacnative/node_modules:$PATH"
 # Setting PATH for Python 3.5
 export PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 # Setting PATH for android sdk & ndk
-export PATH="~/android-sdk-macosx/platform-tools/:~/android-sdk-macosx/tools/:$PATH"
-export ANDROID_NDK="~/android-ndk-r10e/"
+export PATH="$HOME/android-sdk-macosx/platform-tools/:$HOME/android-sdk-macosx/tools/:$PATH"
+export ANDROID_NDK="$HOME/android-ndk-r10e/"
 # Setting node_modules LAC to PATH
-export PATH="~/Documents/Stage/CreationCulturelle/lacnative/node_modules/:$PATH"
+export PATH="$HOME/Documents/Stage/CreationCulturelle/lacnative/node_modules/:$PATH"
+
+export ANDROID_HOME="$HOME/android-sdk-macosx/"
 
 #####################################################################################
 
