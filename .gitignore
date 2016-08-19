@@ -1,7 +1,8 @@
-*
+.DS_Store
 !.gitconfig
 !.bash_profile
 !.zshrc
 !README.md
 !proxy.sh
-!.oh-my-zsh/*
+!.oh-my-zsh/themes
+!.oh-my-zsh/custom
