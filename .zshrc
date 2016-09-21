@@ -1,3 +1,6 @@
+# Automatically set proxy at every terminal start
+source $HOME/autoEnableProxy.sh
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/Nvk/.oh-my-zsh
 
