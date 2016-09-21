@@ -99,6 +99,7 @@ function mkcd() { mkdir -p "$@" && cd "$_"; }
 alias ll='ls -all'
 alias cdcd='cd .. && cd ..  '
 alias lac='cd ~/Documents/Stage/CreationCulturelle/lacnative/'
+alias m1='cd ~/Documents/M1/'
 alias runa='react-native run-android'
 alias runi='react-native run-ios'
 
