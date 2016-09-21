@@ -1,6 +1,5 @@
 #!/bin/bash
 
-USER=$(whoami)
 SSID=LILLE1
 
 if [[ $(networksetup -getairportnetwork en0 | cut -c 24-) = $SSID ]];
