@@ -15,25 +15,22 @@ then
 	# Set the proxy to use command in terminal
 	export http_proxy=http://cache-etu.univ-lille1.fr:3128
 	export https_proxy=http://cache-etu.univ-lille1.fr:3128
-	echo "Terminal proxy..."
-	echo $http_proxy
-	echo $https_proxy
+	echo "Terminal proxy... done."
 
 	# Set the proxy for GitHub
 	sed -i -e 's/^#\(\[https*\]\)/\1/; s/^#\(\t*proxy\)/\1/' $git_config
+	echo "Git proxy... done."
 
 	# Set the proxy for npm
 	npm config set proxy http://cache-etu.univ-lille1.fr:3128
 	npm config set https.proxy http://cache-etu.univ-lille1.fr:3128
 
+	echo "NPM proxy... done."
+
 	# Set the proxy for maven
-	# sed -i '/<proxy>/{n; s/false/true/}' $mvn_config
-	echo "Git proxy..."
-	git config --global --get http.proxy
-	git config --global --get https.proxy
-	echo "NPM proxy..."
-	npm config get proxy
-	npm config get https.proxy
+	echo "MAVEN proxy... done."
+	sed -i -e '/<proxy>/,/<\/proxy>/ s|<active>[a-z.]\{1,\}</active>|<active>true</active>|g' $mvn_config
+
 
 elif [[ $1 = "off" ]]; then
 
@@ -50,7 +47,7 @@ elif [[ $1 = "off" ]]; then
 	npm config rm proxy
 
 	# Unset the proxy for maven
-	# sed -i '/<proxy>/{n; s/true/false/}' $mvn_config
+	sed -i -e '/<proxy>/,/<\/proxy>/ s|<active>[a-z.]\{1,\}</active>|<active>false</active>|g' $mvn_config
 	echo "Removed all proxy..."
 else
 	echo "Usage : $0 [on|off]"
