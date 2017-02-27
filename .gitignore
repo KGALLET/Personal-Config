@@ -1,10 +1,10 @@
 .DS_Store
 *
 !.gitconfig
-!autoEnableProxy.sh
 !.bash_profile
 !.zshrc
 !README.md
-!proxy.sh
+!*.sh
 !.oh-my-zsh/themes
 !.oh-my-zsh/custom
+!*.scpt
