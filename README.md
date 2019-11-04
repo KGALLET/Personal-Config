@@ -1,2 +1,3 @@
-# Personal-Config
-I made this repo to put config files I use on my OS X config in order to get it on others UNIX computers
+# Personal config files
+
+This repo is used only to store my config files (OS X, ZSH...)
